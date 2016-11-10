@@ -1,0 +1,4163 @@
+/* font */
+
+@font-face {
+
+    font-family: OpenSans;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    src: url(../fonts/opensans.woff2) format("woff2"),
+       url(../fonts/opensans.woff) format("woff")
+}
+
+@font-face {
+
+    font-family: OpenSans;
+
+    font-weight: 700;
+
+    font-style: normal;
+
+    src: url(../fonts/opensansbold.woff2) format("woff2"),
+       url(../fonts/opensansbold.woff) format("woff")
+}
+
+/*  other  */
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+
+    display: block
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio, canvas, video {
+
+    display: inline-block
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+
+    display: none;
+
+    height: 0
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden], template {
+
+    display: none
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+
+    font-family: sans-serif;/* 1 */
+
+    -ms-text-size-adjust: 100%;/* 2 */
+
+    -webkit-text-size-adjust: 100%/* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+
+    margin: 0
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+
+    background: transparent
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+
+    outline: thin dotted
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active, a:hover {
+
+    outline: 0
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+
+    font-size: 2em;
+
+    margin: 0.67em 0
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+
+    border-bottom: 1px dotted
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b, strong {
+
+    font-weight: bold
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+
+    font-style: italic
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+
+    box-sizing: content-box;
+
+    height: 0
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+
+    background: #ff0;
+
+    color: #000
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code, kbd, pre, samp {
+
+    font-family: monospace, serif;
+
+    font-size: 1em
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+
+    white-space: pre-wrap
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+
+    font-size: 80%
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub, sup {
+
+    font-size: 75%;
+
+    line-height: 0;
+
+    position: relative;
+
+    vertical-align: baseline
+}
+
+sup {
+
+    top: -0.5em
+}
+
+sub {
+
+    bottom: -0.25em
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+
+    border: 0
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+
+    overflow: hidden
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+
+    margin: 0
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+
+    border: 1px solid #c0c0c0;
+
+    margin: 0 2px;
+
+    padding: 0.35em 0.625em 0.75em
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+
+    border: 0;/* 1 */
+
+    padding: 0/* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button, input, select, textarea {
+
+    font-family: inherit;/* 1 */
+
+    font-size: 100%;/* 2 */
+
+    margin: 0/* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button, input {
+
+    line-height: normal
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button, select {
+
+    text-transform: none
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+
+    -webkit-appearance: button;/* 2 */
+
+    cursor: pointer/* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled], html input[disabled] {
+
+    cursor: default
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"], input[type="radio"] {
+
+    box-sizing: border-box;/* 1 */
+
+    padding: 0/* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+
+    -webkit-appearance: textfield;/* 1 *//* 2 */
+
+    box-sizing: content-box
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+
+    -webkit-appearance: none
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+
+    border: 0;
+
+    padding: 0
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+
+    overflow: auto;/* 1 */
+
+    vertical-align: top/* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+
+    border-collapse: collapse;
+
+    border-spacing: 0
+}
+/*  font  */
+/*  color  */
+/* --------- PRODUCT CATEGORIES BLOCK ---------- */
+/* --------------- TOP WEEK BLOCK -------------- */
+/* ---------------- REVIEWS BLOCK -------------- */
+/* --------------- CONTACTS BLOCK -------------- */
+/* ----------------- CARD BLOCK ---------------- */
+/* --------------------------------------------- */
+/* ------------------- COLOR ------------------- */
+/* --------------------------------------------- */
+/* gray */
+/* -------- TEXT COLOR HOVER --------- */
+/* -------- ICON COLOR HOVER --------- */
+/* -------- LOGO COLOR HOVER --------- */
+/*  distance   */
+/* ------------------- RETINA ------------------- */
+body {
+
+    font-family: "Open Sans", Arial, sans-serif;
+
+    color: black;
+
+    font-size: 17px;
+
+    line-height: 20px;
+
+    position: relative
+}
+a {
+
+    color: inherit;
+
+    text-decoration: none
+}
+
+/*  other blocks  */
+
+.header {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    border-bottom: 1px solid #ececec
+}
+
+.header__menu-first-block {}
+
+.header__menu-second-block {}
+
+/* ---------------------------------------- */
+
+/* ------------ LOGO CONTAINER ------------ */
+
+/* ---------------------------------------- */
+
+.header__logo-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center
+}
+
+/* ------------ LOGO IMG ------------ */
+
+.header__logo-img {
+
+    width: 86px;
+
+    height: 35px;
+
+    margin-top: 22px;
+
+    margin-bottom: 17px;
+
+    margin-left: 116px
+}
+
+.header__logo-img:hover {
+
+    fill: #666
+}
+
+.header__logo-img:active {
+
+    fill: #b2b2b2
+}
+
+/* ------------ HEADER BTN ------------ */
+
+.header__main-menu-btn {
+
+    margin-right: 30px;
+
+    padding: 0;
+
+    border: none;
+
+    background-color: white
+}
+
+/* ---------------------------------------- */
+
+/* --------------- JS CLASS --------------- */
+
+/* ---------------------------------------- */
+
+.open-close-js {
+
+    display: none
+}
+
+/* ---------------------------------------- */
+
+/* --------------- SVG LOGO --------------- */
+
+/* ---------------------------------------- */
+
+.header__logo-img--mobile {}
+
+.header__logo-img--tablet {
+
+    display: none
+}
+
+.header__logo-img--desktop {
+
+    display: none
+}
+
+.header__menu-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    font-weight: 700
+}
+
+/* ------------------------------------ */
+
+/* ----------    СПИСОК      ---------- */
+
+/* ------------------------------------ */
+
+.header__menu {
+
+    width: 320px;
+
+    position: absolute;
+
+    background-color: white
+}
+
+.header__menu-second-block {
+
+    top: 240px;
+
+    left: 0
+}
+
+.header__menu-link {
+
+    position: relative;
+
+    padding-left: 75px;
+
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+
+    border-top: 1px solid #ececec
+}
+
+.header__menu-img {
+
+    position: absolute;
+
+    top: 35%;
+
+    left: 9%
+}
+
+/* ---------- HOVER / ACTIVE ---------- */
+
+.header__menu-link {
+
+    fill: #d3d2d2
+}
+
+.header__menu-link:hover {
+
+    color: #666;
+
+    fill: #63d1bb
+}
+
+.header__menu-link:active {
+
+    color: #b2b2b2;
+
+    fill: #d0f1ea
+}
+
+/* ------------------------------------ */
+
+/* ----------    Стили       ---------- */
+
+/* ------------------------------------ */
+
+.header__menu {/*border: 2px solid red;*/
+}
+
+/* ------------------------------------ */
+
+/* ----------  Первый блок   ---------- */
+
+/* ------------------------------------ */
+
+.header__menu-first-block {}
+
+.header__menu-first-block .header__menu-link {}
+
+.header__first-link {}
+
+.header__second-link {}
+
+/* ------------------------------------ */
+
+/* ----------  Меню поиска   ---------- */
+
+/* ------------------------------------ */
+
+.header__menu-search {}
+
+.header__menu-search .header__menu-img {}
+
+/* ------------------------------------ */
+
+/* ----------  Меню корзины  ---------- */
+
+/* ------------------------------------ */
+
+.header__menu-cart {}
+
+.header__menu-cart .header__menu-img {}
+.footer {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    background-color: #f1f1f1
+}
+/* -------------------------------------------- */
+/* ------------ Блок с логотипом -------------- */
+/* -------------------------------------------- */
+.footer__logo {
+
+    display: none
+}
+.footer__logo-img:hover {
+
+    fill: #63d1bb
+}
+.footer__logo-img:active {
+
+    fill: #d0f1ea
+}
+/* -------------------------------------------- */
+/* ----------- Блок с соц.кнопками ------------ */
+/* -------------------------------------------- */
+.footer__social {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    font-size: 0;
+
+    line-height: 0
+}
+/* ------------ Социальные кнопки ------------- */
+.footer__social-btn {
+
+    margin-right: 40px;
+
+    margin-top: 25px;
+
+    margin-bottom: 25px
+}
+.footer__social-btn:nth-last-child(1) {
+
+    margin-right: 0
+}
+.footer__social-img:hover {
+
+    fill: #63d1bb
+}
+.footer__social-img:active {
+
+    fill: #d0f1ea
+}
+/* -------------------------------------------- */
+/* -------------- Блок copyright -------------- */
+/* -------------------------------------------- */
+.footer__copyright {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding-top: 22px;
+
+    padding-bottom: 23px;
+
+    fill: #63d1bb;
+
+    font-size: 19px;
+
+    line-height: 20px;
+
+    font-weight: 700
+}
+.footer__copyright-img {
+
+    margin-left: 30px
+}
+.footer__copyright:hover {
+
+    fill: #46c1ae
+}
+.footer__copyright:active {
+
+    color: #a8a8a8;
+
+    fill: #bde2dd
+}
+
+.zig-zag__img {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    display: block;
+
+    height: 7px
+}
+
+/*  index.html  */
+
+.banner {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    background-position: 50% -10%;
+
+    background-image: url("../img/hero-mobile@1x.jpg");
+
+    background-color: #f9f9f9;
+
+    background-repeat: no-repeat
+}
+
+/* -------------  ZIGZAG  ------------- */
+
+.banner__zigzag {
+
+    display: none
+}
+
+.banner__zigzag-img {
+
+    width: 1150spx;
+
+    height: 50px
+}
+
+/* --------------------------------------- */
+
+/* -------------  Заголовок  ------------- */
+
+/* --------------------------------------- */
+
+.banner__header {
+
+    margin: 0;
+
+    padding-top: 70px;
+
+    padding-bottom: 120px;
+
+    padding-left: 35px;
+
+    padding-right: 35px;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    line-height: 30px;
+
+    text-align: center
+}
+
+/* --------------------------------------- */
+
+/* ---------------  Список  -------------- */
+
+/* --------------------------------------- */
+
+.banner__list {
+
+    display: none
+}
+
+/* ----------- Ссылки списка ------------- */
+
+.banner__link:not(:nth-last-child(1)) {
+
+    display: none
+}
+
+.banner__link:nth-child(1) {}
+
+.banner__link:nth-child(2) {}
+
+.banner__link-last {}
+.product-categories {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    font-weight: 700
+}
+.product-categories__category {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+
+    padding-left: 30px;
+
+    color: white;
+
+    font-size: 19px;
+
+    line-height: 25px
+}
+.product-categories__icon--interior {
+
+    margin-right: 36px
+}
+.product-categories__icon--toy {
+
+    margin-right: 26px
+}
+/* ---------------------------------------------------------- */
+/* ------------------- HOVER / ACTIVE ----------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------- Первая  кнопка ----------------------- */
+.product-categories__category--objects {
+
+    background-color: #63d1bb;
+
+    fill: #3bb09d
+}
+.product-categories__category--objects:hover {
+
+    background-color: #59d5bc;
+
+    fill: #28a592
+}
+.product-categories__category--objects:active {
+
+    color: #8be1d0;
+
+    fill: #44bfaa
+}
+/* ------------------- Вторая  кнопка ----------------------- */
+.product-categories__category--toy {
+
+    background-color: #56c3b2;
+
+    fill: #35a999
+}
+.product-categories__category--toy:hover {
+
+    background-color: #46c1ae;
+
+    fill: #239f8e
+}
+.product-categories__category--toy:active {
+
+    color: #7dd3c6;
+
+    fill: #36b1a0
+}
+/* ---------------------------------------------------------- */
+/* --------------------- Блок текста ------------------------ */
+/* ---------------------------------------------------------- */
+.product-categories__text {
+
+    display: block;
+
+    width: 110px
+}
+.top-week {
+
+    width: 320px;
+
+    margin: 0 auto
+}
+/* ------------------------------------------ */
+/* ------------ Контейнер шапки ------------- */
+/* ------------------------------------------ */
+.top-week__header-container {
+
+    font-weight: 700
+}
+/* ---------------- Шапка ----------------- */
+.top-week__header {
+
+    display: block;
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-left: 30px;
+
+    margin-top: 35px;
+
+    margin-bottom: 10px;
+
+    font-size: 25px;
+
+    line-height: 30px
+}
+/* -------------- Подпись шапки --------------- */
+.top-week__top {
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-left: 32px;
+
+    margin-bottom: 30px;
+
+    color: #63d1bb;
+
+    font-size: 17px;
+
+    line-height: 17px;
+
+    text-transform: uppercase
+}
+/* ------------------------------------------ */
+/* --------------- Описание ----------------- */
+/* ------------------------------------------ */
+.top-week__description {
+
+    display: block;
+
+    margin-left: 32px;
+
+    margin-right: 40px;
+
+    margin-bottom: 30px;
+
+    color: #444;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 24px
+}
+/* ------------------------------------------ */
+/* ----------- Характеристики  -------------- */
+/* ------------------------------------------ */
+.top-week__options {
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    margin-bottom: 30px;
+
+    color: #444;
+
+    font-size: 15px;
+
+    line-height: 20px
+}
+.top-week__options-row {
+
+    display: flex;
+
+    border-bottom: 1px solid #ececec;
+
+    padding-bottom: 10px;
+
+    padding-top: 10px
+}
+.top-week__options-prop {
+
+    width: 100px
+}
+/* ------------------------------------------ */
+/* --------------  Картинка ----------------- */
+/* ------------------------------------------ */
+.top-week__img {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-bottom: 30px;
+
+    display: block
+}
+/* ------------------------------------------ */
+/* ---------------  Футер  ------------------ */
+/* ------------------------------------------ */
+.top-week__footer {
+
+    margin-bottom: 35px
+}
+/* --------------  Cтоимость ---------------- */
+.top-week__cost {
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: #444;
+
+    font-weight: 700
+}
+/* ---------------  Кнопка ------------------ */
+.top-week__btn {
+
+    display: block;
+
+    width: 90px;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    padding-left: 85px;
+
+    padding-right: 85px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #444;
+
+    color: #444;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    text-decoration: none
+}
+.top-week__btn:hover {
+
+    background-color: #444;
+
+    color: white
+}
+.top-week__btn:active {
+
+    color: #7c7c7c
+}
+.about-us {
+
+    width: 320px;
+
+    margin: 0 auto
+}
+/* --------------------------------------- */
+/* --------------  Шапка  ---------------- */
+/* --------------------------------------- */
+.about-us__header {
+
+    margin-top: 35px;
+
+    margin-bottom: 30px;
+
+    margin-left: 30px;
+
+    font-size: 25px;
+
+    line-height: 30px
+}
+/* --------------------------------------- */
+/* -------------  Список  ---------------- */
+/* --------------------------------------- */
+.about-us__list {
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-left: 30px;
+
+    margin-right: 40px;
+
+    font-weight: 700;
+
+    list-style: none
+}
+/* --------------------------------------- */
+/* -----------  Пункты списка  ----------- */
+/* --------------------------------------- */
+.about-us__benefit {
+
+    display: flex;
+
+    flex-direction: column-reverse;
+
+    padding-bottom: 30px
+}
+/* --------------------------------------- */
+/* -------------  Картинки  ------=------- */
+/* --------------------------------------- */
+.about-us__img {
+
+    display: block;
+
+    padding-bottom: 20px;
+
+    fill: #63d1bb
+}
+.reviews {
+
+    width: 320px;
+
+    margin: 0 auto
+}
+.reviews {}
+/* --------------  Порядок блоков  ---------------- */
+.reviews__header {}
+.reviews__description {}
+.reviews__name-container {}
+.reviews__switch {}
+.reviews__btn {}
+/* --------------------------------------- */
+/* --------------  Шапка  ---------------- */
+/* --------------------------------------- */
+.reviews__header {
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-left: 30px;
+
+    margin-top: 30px;
+
+    margin-bottom: 40px;
+
+    font-size: 25px;
+
+    line-height: 30px
+}
+/* --------------------------------------- */
+/* -------------- Описание --------------- */
+/* --------------------------------------- */
+.reviews__description {
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-left: 30px;
+
+    margin-right: 35px;
+
+    margin-bottom: 40px;
+
+    color: #444;
+
+    font-size: 15px;
+
+    line-height: 30px
+}
+/* --------------------------------------- */
+/* ------------- ИМЯ Комента ------------- */
+/* --------------------------------------- */
+.reviews__name-container {
+
+    margin-left: 30px;
+
+    margin-bottom: 35px
+}
+.reviews__name {
+
+    margin: 0;
+
+    padding: 0;
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 18px;
+
+    line-height: 20px;
+
+    font-weight: 700;
+
+    text-decoration: none
+}
+/* --------------------------------------- */
+/* --------------   Кнопка   ------------- */
+/* --------------------------------------- */
+.reviews__btn {
+
+    display: block;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    margin-bottom: 45px;
+
+    padding-left: 80px;
+
+    padding-right: 80px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    background-color: white;
+
+    border: 2px solid #444;
+
+    color: #444;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    text-decoration: none
+}
+.reviews__btn:hover {
+
+    background-color: #444;
+
+    color: white
+}
+.reviews__btn:active {
+
+    color: #7c7c7c
+}
+/* --------------------------------------- */
+/* --------------  Стрелки   ------------- */
+/* --------------------------------------- */
+.reviews__switch {
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    margin-bottom: 38px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #ececec;
+
+    font-size: 0px;
+
+    line-height: 0px
+}
+.reviews__switch-btn {
+
+    background-color: white;
+
+    border: none;
+
+    padding: 0;
+
+    outline: none
+}
+.reviews__switch-btn:hover {
+
+    fill: #666
+}
+.reviews__switch-btn:active {
+
+    fill: #b2b2b2
+}
+.reviews__switch-prev {
+
+    display: inline-block;
+
+    vertical-align: center;
+
+    border-right: 1px solid #ececec
+}
+.reviews__switch-next {
+
+    display: inline-block;
+
+    vertical-align: center
+}
+.reviews__switch-arrow {
+
+    display: block;
+
+    margin-top: 13px;
+
+    margin-bottom: 13px;
+
+    margin-left: 38px;
+
+    margin-right: 38px;
+
+    font-size: 0px;
+
+    line-height: 0px
+}
+.contacts {
+
+    width: 320px;
+
+    margin: 0 auto
+}
+/* ------------------------------------------ */
+/* ----------------- Шапка ------------------ */
+/* ------------------------------------------ */
+.contacts__header-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center
+}
+.contacts__header {
+
+    margin: 0px;
+
+    margin-left: 30px;
+
+    margin-top: 45px;
+
+    margin-bottom: 42px
+}
+.contacts__header-img {
+
+    display: none
+}
+/* ------------------------------------------ */
+/* ----------------- Описание --------------- */
+/* ------------------------------------------ */
+.contacts__description {
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    font-size: 15px;
+
+    line-height: 30px;
+
+    color: #444
+}
+.contacts__container {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    margin-bottom: 40px
+}
+.contacts__head {
+
+    margin: 0;
+
+    width: 70px
+}
+.contacts__content--cite {
+
+    color: #444;
+
+    border-bottom: 1px solid #62d1ba
+}
+.contacts__content--cite:hover {
+
+    color: #46c1ae;
+
+    border-color: #46c1ae
+}
+.contacts__content--cite:active {
+
+    color: #c7ece7;
+
+    border-color: #edf9f7
+}
+.contacts__content {
+
+    font-style: normal
+}
+/* ------------------------------------------ */
+/* ----------------- КАРТА ------------------ */
+/* ------------------------------------------ */
+.contacts__map {
+
+    margin-bottom: 40px;
+
+    position: relative
+}
+.contacts__map-img {}
+.contacts__map-svg {
+
+    position: absolute;
+
+    top: 35%;
+
+    left: 40%
+}
+/* ------------------------------------------ */
+/* ----------------- Кнопка ----------------- */
+/* ------------------------------------------ */
+.contacts__btn {
+
+    display: block;
+
+    background-color: #ffffff;
+
+    border: 2px solid #444;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    margin-bottom: 40px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    padding-left: 50px;
+
+    padding-right: 50px;
+
+    color: #444;
+
+    font-size: 17px;
+
+    line-height: 17px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    text-align: center
+}
+.contacts__btn:hover {
+
+    background-color: #444;
+
+    color: white
+}
+.contacts__btn:active {
+
+    color: #7c7c7c
+}
+
+/*  catalog.html  */
+
+.banner-catalog {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    background-color: #f1f1f1
+}
+
+.banner-catalog__header {
+
+    display: block;
+
+    text-align: center;
+
+    margin: 0;
+
+    padding-top: 75px;
+
+    padding-bottom: 75px;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    line-height: 30px
+}
+
+/* ------------------------- */
+.card {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    padding-bottom: 30px;
+
+    font-size: 0px;
+
+    line-height: 0px
+}
+/* --------------------------------------- */
+/* -------------  Карточка  -------------- */
+/* --------------------------------------- */
+.card__container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    margin-top: 30px
+}
+/* --------------------------------------- */
+/* ------------  Картинка  --------------- */
+/* --------------------------------------- */
+.card__img {}
+/* --------------------------------------- */
+/* ------------  Хар-ки    --------------- */
+/* --------------------------------------- */
+.card__options {
+
+    background-color: white;
+
+    border: 1px solid #ececec;
+
+    border-top: none;
+
+    padding-left: 30px;
+
+    padding-right: 30px
+}
+.card__options:hover {
+
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1)
+}
+/* --------------------------------------- */
+/* ------------  Название  --------------- */
+/* --------------------------------------- */
+.card__name {
+
+    margin: 0;
+
+    padding: 0;
+
+    padding-bottom: 15px;
+
+    padding-top: 30px;
+
+    font-size: 17px;
+
+    line-height: 20px;
+
+    font-weight: 700;
+
+    cursor: pointer
+}
+.card__name:hover {
+
+    color: #666
+}
+.card__name:active {
+
+    color: #b2b2b2
+}
+/* --------------------------------------- */
+/* ------------  Описание  --------------- */
+/* --------------------------------------- */
+.card__description {
+
+    margin: 0;
+
+    padding: 0;
+
+    padding-bottom: 30px;
+
+    width: auto;
+
+    flex-wrap: wrap;
+
+    color: #444;
+
+    font-size: 13px;
+
+    line-height: 15px
+}
+/* --------------------------------------- */
+/* ------------  Стоимость  -------------- */
+/* --------------------------------------- */
+.card__cost {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-top: 2px solid #ececec;
+
+    fill: #d3d2d2
+}
+.card__cost:hover {
+
+    color: #666;
+
+    fill: #63d1bb
+}
+.card__cost:active {
+
+    color: #b2b2b2;
+
+    fill: #d0f1ea
+}
+/* ------------ Число в цене ------------- */
+.card__number-cost {
+
+    padding: 0;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 24px
+}
+/* -------------   Кнопка   -------------- */
+.card__buy-btn {
+
+    padding: 0;
+
+    border: none;
+
+    background-color: #ffffff;
+
+    outline: none
+}
+/* --------------------------------------- */
+.video {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    margin-bottom: 30px;
+
+    font-size: 0;
+
+    line-height: 0
+}
+/* --------------------------------------- */
+/* ------------    Шапка   --------------- */
+/* --------------------------------------- */
+.video__header {
+
+    padding-top: 30px;
+
+    padding-left: 90px;
+
+    padding-right: 30px;
+
+    padding-bottom: 26px;
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    margin-top: 0;
+
+    margin-bottom: 0;
+
+    border: 1px solid #ececec;
+
+    border-bottom: none;
+
+    font-size: 17px;
+
+    line-height: 24px
+}
+.video__header-svg {
+
+    fill: #63d1bb;
+
+    position: absolute;
+
+    top: 40%;
+
+    left: 20%
+}
+.video__head {
+
+    position: relative
+}
+/* --------------------------------------- */
+/* ------------ Видео блок --------------- */
+/* --------------------------------------- */
+.video__video {
+
+    margin-left: 30px
+}
+/* --------------------------------------- */
+/* ---------- Характеристики ------------- */
+/* --------------------------------------- */
+.video__options {
+
+    margin: 0px 30px;
+
+    padding-left: 35px;
+
+    padding-right: 35px;
+
+    padding-top: 35px;
+
+    border: 1px solid #ececec;
+
+    border-top: none
+}
+/* --------------------------------------- */
+/* ------------- Описание ---------------- */
+/* --------------------------------------- */
+.video__description {
+
+    margin: 0;
+
+    color: #444;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    line-height: 24px
+}
+/* --------------------------------------- */
+/* -------------  Кнопка  ---------------- */
+/* --------------------------------------- */
+.video__btn {
+
+    display: block;
+
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #444;
+
+    color: #444;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 17px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    text-align: center
+}
+.video__btn:hover {
+
+    background-color: #444;
+
+    color: white
+}
+.video__btn:active {
+
+    color: #7c7c7c
+}
+/* ------------------------- */
+
+/*  form.html  */
+
+.banner-form {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    background-color: #f1f1f1;
+
+    background-image: none
+}
+
+.banner-form__header {
+
+    display: block;
+
+    text-align: center;
+
+    margin: 0;
+
+    padding-top: 75px;
+
+    padding-bottom: 75px;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    line-height: 30px
+}
+
+/*------------------------- */
+.form {
+
+    width: 320px;
+
+    margin: 0 auto
+}
+.form__field {
+
+    border: none;
+
+    margin: 0;
+
+    padding: 0
+}
+/* ------------------------------------------ */
+/* --------------- Описание ----------------- */
+/* ------------------------------------------ */
+.form__description {
+
+    margin: 0;
+
+    padding: 0;
+
+    padding-top: 30px;
+
+    padding-left: 30px;
+
+    padding-right: 48px;
+
+    padding-bottom: 30px;
+
+    box-sizing: border-box;
+
+    max-width: 100%;
+
+    color: #444;
+
+    line-height: 30px
+}
+/* ------------------------------------------ */
+/* ----------- Группировка форм ------------- */
+/* ------------------------------------------ */
+.form__group {
+
+    border: none;
+
+    border-top: 1px solid #63d1bb;
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-right: 30px
+}
+/* ------------------------------------------ */
+/* ----------- Шапки названий форм ---------- */
+/* ------------------------------------------ */
+.form__group-title {
+
+    margin-bottom: 30px;
+
+    padding-left: 30px;
+
+    padding-right: 30px;
+
+    color: #63d1bb;
+
+    text-transform: uppercase;
+
+    font-weight: 700
+}
+/* ------------------------------------------ */
+/* ------------ Контейнеры форм ------------- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------- Радио кнопки --------------- */
+/* ------------------------------------------ */
+.form__radio-input {
+
+    display: none
+}
+/* --------- Подписи радио кнопок ----------- */
+.form__radio-label {
+
+    display: flex;
+
+    align-items: center;
+
+    font-weight: 700;
+
+    margin-left: 30px;
+
+    margin-bottom: 15px
+}
+.form__radio-icon:hover {
+
+    border-color: #63d1bb
+}
+.form__radio-icon:active {
+
+    border-color: #c7c7c7
+}
+.form__label-container {}
+/* --------- Стилизация радио кнопок ----------- */
+.form__radio-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: 2px solid #444;
+
+    border-radius: 50%
+}
+input[type=radio]:checked + .form__radio-icon::after {
+
+    content: "";
+
+    width: 16px;
+
+    height: 16px;
+
+    display: block;
+
+    margin-left: 12px;
+
+    margin-top: 12px;
+
+    border-radius: 50%;
+
+    background-color: #63d1bb
+}
+/* --------- Подпись радио кнопок ----------- */
+.form__radio-name {
+
+    width: 150px;
+
+    padding-left: 20px
+}
+/* ------------------------------------------ */
+/* ---------- Раздел выбора цвета ----------- */
+/* ------------------------------------------ */
+.form__label-container--color {}
+.form__container--color {}
+.form__group-title--color {}
+.form__checkbox-input {
+
+    display: none
+}
+.form__checkbox-label {
+
+    display: flex;
+
+    align-items: center;
+
+    font-weight: 700;
+
+    margin-left: 30px;
+
+    margin-bottom: 25px
+}
+/* --------- Стилизация чекбокс кнопок ----------- */
+.form__checkbox-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: 2px solid #444
+}
+.form__checkbox-icon:hover {
+
+    border-color: #63d1bb
+}
+.form__checkbox-icon:active {
+
+    border-color: #c7c7c7
+}
+.form__checkbox-name {
+
+    padding-left: 20px
+}
+input[type=checkbox]:checked + .form__checkbox-icon::after {
+
+    content: "";
+
+    display: block;
+
+    width: 20px;
+
+    height: 10px;
+
+    border-left: 3px solid black;
+
+    border-bottom: 3px solid black;
+
+    margin-left: 10px;
+
+    margin-top: 10px;
+
+    transform: rotate(-45deg)
+}
+/* ------------------------------------------ */
+/* -----------  Раздел ввода ФИО  ----------- */
+/* ------------------------------------------ */
+.form__container--name {
+
+    padding-bottom: 30px
+}
+.form__container--name .form__group-title {
+
+    margin-bottom: 0
+}
+.form__container--name .form__label-container {}
+.form__text-label {
+
+    display: block;
+
+    padding-left: 30px;
+
+    padding-top: 25px
+}
+.form__text-name {
+
+    display: block;
+
+    font-weight: 700
+}
+.form__text-input {
+
+    box-sizing: border-box;
+
+    width: 260px;
+
+    height: 50px;
+
+    border: none;
+
+    border-bottom: 2px solid black
+}
+.form__text-input:hover {
+
+    border-color: #63d1bb
+}
+.form__text-input--name {}
+/* ------------------------------------------ */
+/* -----------  Раздел Tel Email  ----------- */
+/* ------------------------------------------ */
+.form__container--other {}
+.form__container--other .form__group-title {
+
+    margin-bottom: 0
+}
+.form__container--other .form__text-input {
+
+    margin-left: 30px;
+
+    margin-bottom: 40px
+}
+/* ------------------------------------------ */
+/* -------------    Коммент    -------------- */
+/* ------------------------------------------ */
+.form__comment {
+
+    box-sizing: border-box;
+
+    width: 260px;
+
+    height: 142px;
+
+    margin-left: 30px;
+
+    margin-bottom: 20px;
+
+    padding: 20px
+}
+.form__container--comment {}
+.form__container--comment .form__group-title {}
+/* -------------  Футер форм  --------------- */
+.form__footer-container {
+
+    text-align: center;
+
+    padding-bottom: 55px
+}
+.form__other-info {
+
+    margin: 0;
+
+    padding: 0;
+
+    padding-bottom: 20px;
+
+    font-size: 14px
+}
+/* ------------------------------------------ */
+/* -------------    Кнопка     -------------- */
+/* ------------------------------------------ */
+.form__submit {
+
+    padding-left: 47px;
+
+    padding-right: 47px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    background-color: white;
+
+    border: 2px solid #444;
+
+    color: #444;
+
+    font-weight: 700;
+
+    text-transform: uppercase
+}
+.form__submit:hover {
+
+    background-color: #444;
+
+    color: white
+}
+.form__submit:active {
+
+    color: #7c7c7c
+}
+
+/*  modal window  */
+
+.modal {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center
+}
+
+.modal--open {
+
+    display: none
+}
+
+.modal__overlay {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    background-color: #fdfdfd;
+
+    opacity: 0.9
+}
+
+.modal__container {
+
+    border: 1px solid #c6c6c6;
+
+    background-color: white;
+
+    z-index: 200;
+
+    text-align: center
+}
+
+.modal__container:hover {
+
+    box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25)
+}
+
+/* --------------------------------------- */
+
+/* -------------  Шапка  ----------------- */
+
+/* --------------------------------------- */
+
+.modal__header {
+
+    margin: 0;
+
+    padding-top: 40px;
+
+    padding-left: 75px;
+
+    padding-right: 75px;
+
+    padding-bottom: 25px;
+
+    font-size: 25px;
+
+    line-height: 25px;
+
+    text-transform: uppercase
+}
+
+/* --------------------------------------- */
+
+/* -------------  Подпись  --------------- */
+
+/* --------------------------------------- */
+
+.modal__group {
+
+    border: none;
+
+    margin: 0;
+
+    padding: 0
+}
+
+.modal__group-header {
+
+    margin: 0;
+
+    padding: 0;
+
+    padding-bottom: 30px;
+
+    color: #444;
+
+    font-size: 15px;
+
+    line-height: 15px
+}
+
+/* --------------------------------------- */
+
+/* ------------  RADIO BTN  -------------- */
+
+/* --------------------------------------- */
+
+.modal__radio {
+
+    display: none
+}
+
+.modal__radio-btn {
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    box-sizing: border-box;
+
+    width: 80px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 30px;
+
+    margin-right: 2px;
+
+    border: 2px solid #444;
+
+    font-weight: 700
+}
+
+.modal__label--active {
+
+    border-color: #63d1bb
+}
+
+.modal__sibmit-btn {
+
+    background-color: #63d1bb;
+
+    border: none;
+
+    margin: 0px;
+
+    margin-bottom: 30px;
+
+    padding: 0px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    padding-left: 80px;
+
+    padding-right: 80px;
+
+    color: #ffffff;
+
+    text-transform: uppercase;
+
+    font-weight: 700
+}
+
+@media (min-width: 768px) {
+
+    .header {
+
+        width: 760px
+    }
+
+    .header {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        flex-wrap: wrap
+    }
+
+    .header__menu-first-block {
+
+        order: 3
+    }
+
+    .header__menu-second-block {
+
+        order: 2
+    }
+
+    .header__logo-container {
+
+        order: 1
+    }
+
+    .header__logo-img {
+
+        margin-left: 50px;
+
+        margin-bottom: 20px;
+
+        width: 113px;
+
+        height: 46px
+    }
+
+    .header__main-menu-btn {
+
+        display: none
+    }
+
+    .open-close-js {
+
+        display: block
+    }
+
+    .header__logo-img--mobile {
+
+        display: none
+    }
+
+    .header__logo-img--tablet {
+
+        display: block
+    }
+
+    .header__menu-container {
+
+        flex-direction: row
+    }
+
+    .header__menu {
+
+        position: relative;
+
+        width: auto
+    }
+
+    .header__menu-second-block {
+
+        top: 0
+    }
+
+    .header__menu-link {
+
+        padding-left: 50px;
+
+        border: none
+    }
+
+    .header__menu-first-block {
+
+        position: absolute;
+
+        top: 88px;
+
+        left: 0;
+
+        background-color: inherit;
+
+        font-size: 15px;
+
+        line-height: 15px
+    }
+
+    .header__menu-first-block .header__menu-link {
+
+        padding-top: 25px;
+
+        padding-bottom: 25px
+    }
+
+    .header__menu-search {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin: 0;
+
+        padding: 0;
+
+        width: 82px;
+
+        height: 88px;
+
+        border-left: 1px solid #ececec;
+
+        border-right: 1px solid #ececec;
+
+        font-size: 0;
+
+        line-height: 0
+    }
+
+    .header__menu-search .header__menu-img {
+
+        position: relative;
+
+        top: 0;
+
+        left: 0
+    }
+
+    .header__menu-cart {
+
+        display: flex;
+
+        flex-direction: row-reverse;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 0;
+
+        padding-right: 50px
+    }
+
+    .header__menu-cart .header__menu-img {
+
+        position: relative;
+
+        top: 0;
+
+        left: 0;
+
+        padding-left: 30px;
+
+        padding-right: 30px
+    }
+
+    .footer {
+
+        width: 760px
+    }
+
+    .footer {
+
+        flex-direction: row;
+
+        justify-content: space-between
+    }
+
+    .footer__logo {
+
+        display: flex;
+
+        align-items: center;
+
+        padding-left: 50px;
+
+        padding-top: 50px;
+
+        padding-bottom: 60px
+    }
+
+    .footer__social {
+
+        margin: 0;
+
+        border: none
+    }
+
+    .footer__copyright {
+
+        padding-right: 50px;
+
+        padding-top: 0;
+
+        padding-bottom: 0
+    }
+
+    .zig-zag__img {
+
+        width: 760px
+    }
+
+    .zig-zag__img {
+
+        width: 760px;
+
+        height: 17px
+    }
+
+    .banner {
+
+        width: 760px
+    }
+
+    .banner {
+
+        background-image: url("../img/hero-desktop@1x.jpg")
+    }
+
+    .banner__zigzag {
+
+        display: flex;
+
+        width: 768px;
+
+        height: 20px;
+
+        margin-top: -30px
+    }
+
+    .banner__header {
+
+        align-self: center;
+
+        padding-left: 140px;
+
+        padding-right: 140px;
+
+        padding-top: 120px;
+
+        padding-bottom: 370px;
+
+        font-size: 43px;
+
+        line-height: 45px
+    }
+
+    .banner__list {
+
+        display: flex;
+
+        justify-content: flex-end;
+
+        font-size: 15px;
+
+        line-height: 15px
+    }
+
+    .banner__link-last {
+
+        margin-right: 50px;
+
+        margin-top: 25px
+    }
+
+    .product-categories {
+
+        width: 760px
+    }
+
+    .product-categories {
+
+        display: flex;
+
+        justify-content: center
+    }
+
+    .product-categories__category {
+
+        padding-top: 35px;
+
+        padding-bottom: 35px;
+
+        padding-left: 35px;
+
+        font-size: 20px;
+
+        line-height: 25px
+    }
+
+    .product-categories__text {
+
+        margin-right: 110px
+    }
+
+    .top-week {
+
+        width: 760px
+    }
+
+    .top-week__header-container {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        margin-top: 40px;
+
+        margin-left: 50px;
+
+        margin-right: 50px;
+
+        margin-bottom: 55px
+    }
+
+    .top-week__header {
+
+        margin: 0;
+
+        padding: 0;
+
+        -ms-grid-row-align: center;
+
+        align-items: center;
+
+        font-size: 43px;
+
+        line-height: 45px
+    }
+
+    .top-week__top {
+
+        margin: 0;
+
+        padding: 0;
+
+        align-self: center;
+
+        text-align: center;
+
+        width: 100px
+    }
+
+    .top-week__description {
+
+        width: 260px;
+
+        margin-top: 0;
+
+        margin-left: 50px;
+
+        margin-bottom: 45px
+    }
+
+    .top-week__options {
+
+        width: 260px;
+
+        margin-left: 50px;
+
+        margin-bottom: 60px
+    }
+
+    .top-week__img {
+
+        float: right;
+
+        width: 333px;
+
+        height: 404px;
+
+        margin-right: 50px;
+
+        margin-top: -290px
+    }
+
+    .top-week__footer {
+
+        margin-bottom: 55px
+    }
+
+    .top-week__cost {
+
+        margin-bottom: 35px;
+
+        font-size: 20px;
+
+        line-height: 20px
+    }
+
+    .top-week__btn {
+
+        margin-left: 50px
+    }
+
+    .about-us {
+
+        width: 760px
+    }
+
+    .about-us__header {
+
+        margin-left: 50px;
+
+        margin-top: 60px;
+
+        margin-bottom: 45px;
+
+        font-size: 43px;
+
+        line-height: 50px
+    }
+
+    .about-us__list {
+
+        margin-left: 50px;
+
+        font-size: 20px;
+
+        line-height: 20px;/*display: flex;
+    flex-wrap: wrap;*/
+
+        -moz-columns: 2;
+
+        columns: 2
+    }
+
+    .about-us__benefit {
+
+        width: 325px
+    }
+
+    .reviews {
+
+        width: 760px
+    }
+
+    .reviews {
+
+        display: flex;
+
+        padding-top: 85px;
+
+        padding-bottom: 35px;
+
+        margin-top: 50px;
+
+        margin-bottom: 70px;
+
+        background-image: url(../img/review@1x.jpg);
+
+        background-repeat: no-repeat;
+
+        background-size: 350px 457px
+    }
+
+    .reviews {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        flex-wrap: wrap
+    }
+
+    .reviews__header {
+
+        order: 1
+    }
+
+    .reviews__description {
+
+        order: 3
+    }
+
+    .reviews__name-container {
+
+        order: 4
+    }
+
+    .reviews__switch {
+
+        order: 5
+    }
+
+    .reviews__btn {
+
+        order: 2
+    }
+
+    .reviews__header {
+
+        margin: 0;
+
+        margin-left: 50px;
+
+        font-size: 43px;
+
+        line-height: 50px
+    }
+
+    .reviews__description {
+
+        margin-top: 65px;
+
+        margin-left: 50px;
+
+        margin-right: 70px;
+
+        margin-bottom: 70px;
+
+        line-height: 27px
+    }
+
+    .reviews__name-container {
+
+        margin-left: 50px;
+
+        margin-bottom: 0
+    }
+
+    .reviews__btn {
+
+        margin: 0;
+
+        margin-right: 50px;
+
+        padding-top: 16px;
+
+        padding-bottom: 16px;
+
+        padding-left: 40px;
+
+        padding-right: 40px
+    }
+
+    .reviews__switch {
+
+        border: none;
+
+        margin-bottom: 0
+    }
+
+    .reviews__switch-prev {
+
+        border: none
+    }
+
+    .reviews__switch-arrow {
+
+        margin-left: 0
+    }
+
+    .contacts {
+
+        width: 760px
+    }
+
+    .contacts {}
+
+    .contacts__header-container {}
+
+    .contacts__header {
+
+        margin-left: 50px;
+
+        margin-top: 70px;
+
+        font-size: 43px;
+
+        line-height: 45px
+    }
+
+    .contacts__header-img {
+
+        display: block;
+
+        margin-right: 50px
+    }
+
+    .contacts__description {
+
+        flex-direction: row;
+
+        margin-left: 50px;
+
+        font-size: 17px;
+
+        line-height: 30px
+    }
+
+    .contacts__container {
+
+        margin-right: 55px;
+
+        margin-bottom: 60px
+    }
+
+    .contacts__head {
+
+        width: 100px
+    }
+
+    .contacts__map-img {
+
+        width: 760px;
+
+        height: 457px
+    }
+
+    .contacts__map-svg {
+
+        left: 45%
+    }
+
+    .contacts__btn {
+
+        margin-left: 250px;
+
+        margin-right: 250px;
+
+        margin-bottom: 60px
+    }
+
+    .banner-catalog {
+
+        width: 760px
+    }
+
+    .banner-catalog__header {
+
+        padding-top: 105px;
+
+        padding-bottom: 80px;
+
+        font-size: 43px;
+
+        font-weight: 700;
+
+        line-height: 50px
+    }
+
+    .card {
+
+        width: 760px
+    }
+
+    .card__container {
+
+        flex-direction: row;
+
+        margin-left: 50px;
+
+        margin-right: 50px
+    }
+
+    .card__img {
+
+        width: 334px;
+
+        height: 334px
+    }
+
+    .card__options {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        width: 335px;
+
+        border: 1px solid #ececec;
+
+        border-left: none;
+
+        margin-left: 0;
+
+        margin-right: 0;
+
+        padding-right: 30px
+    }
+
+    .card__name {
+
+        font-size: 20px;
+
+        line-height: 25px
+    }
+
+    .card__description {
+
+        font-size: 15px;
+
+        line-height: 15px
+    }
+
+    .card__cost {/*align-self: flex-start;*/
+    }
+
+    .video {
+
+        width: 760px
+    }
+
+    .video__header {
+
+        font-size: 20px;
+
+        line-height: 24px;
+
+        margin-top: 480px;
+
+        margin-left: 50px;
+
+        margin-right: 45px;
+
+        padding-bottom: 0;
+
+        padding-left: 110px;
+
+        border: none;
+
+        border-left: 1px solid #ececec;
+
+        border-right: 1px solid #ececec
+    }
+
+    .video__header-svg {
+
+        top: 55%;
+
+        left: 12%
+    }
+
+    .video__video {
+
+        width: 668px;
+
+        height: 455px;
+
+        margin-left: 50px;
+
+        float: left;
+
+        margin-top: -510px
+    }
+
+    .video__options {
+
+        margin-left: 50px;
+
+        margin-right: 45px;
+
+        padding-left: 40px
+    }
+
+    .banner-form {
+
+        width: 760px
+    }
+
+    .banner-form__header {
+
+        padding-top: 105px;
+
+        padding-bottom: 80px;
+
+        font-size: 43px;
+
+        font-weight: 700;
+
+        line-height: 50px
+    }
+
+    .form {
+
+        width: 760px
+    }
+
+    .form__description {
+
+        padding-left: 50px;
+
+        padding-top: 70px;
+
+        padding-bottom: 80px
+    }
+
+    .form__group {
+
+        border: none
+    }
+
+    .form__group-title {
+
+        width: 100px;
+
+        margin-left: 50px;
+
+        margin-bottom: 0;
+
+        padding-left: 0
+    }
+
+    .form__radio-label {
+
+        margin-left: 0
+    }
+
+    .form__label-container {
+
+        margin-top: -30px;
+
+        margin-left: 220px
+    }
+
+    .form__radio-name {
+
+        width: auto
+    }
+
+    .form__label-container--color {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        margin-bottom: 35px
+    }
+
+    .form__container--color {
+
+        background-color: #f1f1f1;
+
+        margin-top: 35px;
+
+        padding-top: 50px
+    }
+
+    .form__group-title--color {
+
+        padding-top: 30px
+    }
+
+    .form__checkbox-label {
+
+        margin-left: 0;
+
+        width: 250px
+    }
+
+    .form__container--name {
+
+        padding-bottom: 70px
+    }
+
+    .form__container--name .form__group-title {
+
+        padding-top: 70px
+    }
+
+    .form__container--name .form__label-container {
+
+        margin-top: -60px
+    }
+
+    .form__text-label {
+
+        padding-left: 0
+    }
+
+    .form__text-name {
+
+        display: inline-block;
+
+        vertical-align: center;
+
+        padding-right: 25px
+    }
+
+    .form__text-input {
+
+        width: 375px;
+
+        padding-left: 20px
+    }
+
+    .form__text-input--name {
+
+        width: 420px
+    }
+
+    .form__container--other {
+
+        padding-top: 50px;
+
+        padding-bottom: 30px;
+
+        background-color: #f1f1f1
+    }
+
+    .form__container--other .form__group-title {
+
+        display: inline-block;
+
+        vertical-align: center
+    }
+
+    .form__container--other .form__text-input {
+
+        display: inline-block;
+
+        vertical-align: center;
+
+        width: 490px;
+
+        background: #f1f1f1
+    }
+
+    .form__comment {
+
+        width: 490px;
+
+        margin-bottom: 0
+    }
+
+    .form__container--comment {
+
+        padding-top: 55px;
+
+        padding-bottom: 55px
+    }
+
+    .form__container--comment .form__group-title {
+
+        display: inline-block;
+
+        vertical-align: center
+    }
+
+    .form__footer-container {
+
+        display: flex;
+
+        flex-direction: row-reverse;
+
+        justify-content: space-between;
+
+        align-items: baseline
+    }
+
+    .form__other-info {
+
+        padding-right: 50px;
+
+        font-size: 17px
+    }
+
+    .form__submit {
+
+        margin-left: 50px
+    }
+
+    .modal {
+
+        width: 760px
+    }
+
+    .modal {}
+
+    .modal__container {
+
+        width: 568px;
+
+        margin-left: auto;
+
+        margin-right: auto
+    }
+
+    .modal__header {
+
+        padding-top: 50px;
+
+        padding-bottom: 30px;
+
+        font-size: 30px;
+
+        line-height: 30px
+    }
+
+    .modal__group-header {
+
+        padding-bottom: 25px;
+
+        font-size: 17px;
+
+        line-height: 17px
+    }
+
+    .modal__radio-btn {
+
+        width: 110px
+    }
+
+    .modal__sibmit-btn {
+
+        display: block;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        padding-left: 125px;
+
+        padding-right: 125px;
+
+        margin-bottom: 50px
+    }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+
+    .banner {
+
+        background-image: url("../img/hero-desktop@2x.jpg")
+    }
+
+    .reviews {
+
+        background-image: url(../img/review@2x.jpg)
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .header {
+
+        width: 1150px
+    }
+
+    .header__menu-first-block {
+
+        order: 1
+    }
+
+    .header__menu-second-block {
+
+        order: 3
+    }
+
+    .header__logo-container {
+
+        justify-content: center;
+
+        order: 2
+    }
+
+    .header__logo-img {
+
+        width: 149px;
+
+        height: 72px;
+
+        margin: 0;
+
+        margin-top: 9px;
+
+        margin-bottom: 7px
+    }
+
+    .header__logo-img--tablet {
+
+        display: none
+    }
+
+    .header__logo-img--desktop {
+
+        display: block
+    }
+
+    .header__menu-first-block {
+
+        position: relative;
+
+        top: 0;
+
+        left: 0;
+
+        font-size: 17px;
+
+        line-height: 20px
+    }
+
+    .header__menu-first-block .header__menu-link {
+
+        padding-top: 34px;
+
+        padding-bottom: 34px
+    }
+
+    .header__first-link {
+
+        padding-right: 35px;
+
+        border-right: 1px solid #ececec
+    }
+
+    .header__second-link {
+
+        padding-left: 35px
+    }
+
+    .footer {
+
+        width: 1150px
+    }
+
+    .zig-zag__img {
+
+        width: 1150px
+    }
+
+    .zig-zag__img {
+
+        width: 1150px;
+
+        height: 23px
+    }
+
+    .banner {
+
+        width: 1150px
+    }
+
+    .banner__zigzag {
+
+        width: 1150px
+    }
+
+    .banner__header {
+
+        padding-left: 270px;
+
+        padding-right: 270px;
+
+        padding-bottom: 355px;
+
+        font-size: 53px;
+
+        line-height: 55px
+    }
+
+    .banner__list {
+
+        justify-content: flex-start;
+
+        padding-top: 25px;
+
+        padding-right: 50px
+    }
+
+    .banner__link:not(:nth-last-child(1)) {
+
+        display: block;
+
+        font-weight: 700
+    }
+
+    .banner__link:nth-child(1) {
+
+        margin-left: 50px;
+
+        margin-right: 25px
+    }
+
+    .banner__link:nth-child(2) {
+
+        margin-left: 35px;
+
+        margin-right: 510px
+    }
+
+    .banner__link-last {
+
+        margin: 0/*margin-right: 50px;*/
+    }
+
+    .product-categories {
+
+        width: 1150px
+    }
+
+    .product-categories__text {
+
+        margin-right: 300px
+    }
+
+    .top-week {
+
+        width: 1150px
+    }
+
+    .top-week__header-container {
+
+        justify-content: flex-end;
+
+        flex-direction: row-reverse;
+
+        margin-top: 130px
+    }
+
+    .top-week__header {
+
+        margin-left: 55px;
+
+        font-size: 53px;
+
+        line-height: 55px
+    }
+
+    .top-week__top {
+
+        margin-left: 50px
+    }
+
+    .top-week__description {
+
+        margin-left: 255px
+    }
+
+    .top-week__options {
+
+        margin-left: 255px;
+
+        margin-bottom: 110px
+    }
+
+    .top-week__img {
+
+        width: 525px;
+
+        height: 636px;
+
+        margin-bottom: 0;
+
+        margin-top: -510px
+    }
+
+    .top-week__footer {
+
+        margin-bottom: 75px
+    }
+
+    .top-week__cost {
+
+        margin-left: 225px
+    }
+
+    .top-week__btn {
+
+        margin-left: 255px
+    }
+
+    .about-us {
+
+        width: 1150px
+    }
+
+    .about-us__header {
+
+        margin-left: 255px;
+
+        margin-top: 70px;
+
+        font-size: 53px;
+
+        line-height: 57px
+    }
+
+    .about-us__list {
+
+        margin-left: 255px
+    }
+
+    .reviews {
+
+        width: 1150px
+    }
+
+    .reviews {
+
+        padding-top: 80px;
+
+        padding-bottom: 100px;
+
+        margin-top: 60px;
+
+        background-position: 50px 0
+    }
+
+    .reviews__header {
+
+        margin-left: 255px;
+
+        font-size: 53px;
+
+        line-height: 57px
+    }
+
+    .reviews__description {
+
+        margin-left: 255px;
+
+        margin-right: 150px;
+
+        margin-bottom: 50px
+    }
+
+    .reviews__name-container {
+
+        margin-left: 255px
+    }
+
+    .reviews__btn {}
+
+    .contacts {
+
+        width: 1150px
+    }
+
+    .contacts__header-container {
+
+        flex-direction: row-reverse;
+
+        justify-content: flex-end;
+
+        margin-top: 135px;
+
+        margin-bottom: 40px
+    }
+
+    .contacts__header {
+
+        margin-top: 100px;
+
+        margin: 0;
+
+        margin-left: 90px;
+
+        font-size: 53px;
+
+        line-height: 55px
+    }
+
+    .contacts__header-img {
+
+        margin-left: 115px;
+
+        margin-right: 0
+    }
+
+    .contacts__description {
+
+        flex-direction: column;
+
+        margin-left: 255px;
+
+        line-height: 25px
+    }
+
+    .contacts__container {
+
+        margin-bottom: 30px
+    }
+
+    .contacts__head {
+
+        width: 80px
+    }
+
+    .contacts__map-img {
+
+        width: 525px;
+
+        height: 457px;
+
+        float: right;
+
+        margin-right: 50px;
+
+        margin-top: -370px
+    }
+
+    .contacts__map-svg {
+
+        position: relative;
+
+        float: right;
+
+        margin-right: 200px;
+
+        margin-top: -200px
+    }
+
+    .contacts__btn {
+
+        margin-left: 255px;
+
+        margin-top: -13px;
+
+        width: 150px
+    }
+
+    .banner-catalog {
+
+        width: 1150px
+    }
+
+    .banner-catalog__header {
+
+        padding-bottom: 100px;
+
+        font-size: 53px;
+
+        font-weight: 700;
+
+        line-height: 57px
+    }
+
+    .card {
+
+        width: 1150px
+    }
+
+    .card {
+
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: wrap
+    }
+
+    .card__container {
+
+        flex-direction: column;
+
+        margin-right: 0
+    }
+
+    .card__img {
+
+        width: 316px;
+
+        height: 462px;
+
+        margin-bottom: 0
+    }
+
+    .card__options {
+
+        border: 1px solid #ececec;
+
+        border-top: none;
+
+        width: 316px;/*flex: 1;*/
+
+        margin-top: 0;
+
+        padding: 0
+    }
+
+    .card__name {
+
+        padding-right: 0;
+
+        padding-left: 30px;
+
+        padding-top: 30px;
+
+        text-align: left
+    }
+
+    .card__description {
+
+        margin-bottom: 45px;
+
+        padding-bottom: 0;
+
+        padding-left: 30px
+    }
+
+    .card__cost {
+
+        margin-left: 30px;
+
+        margin-right: 30px
+    }
+
+    .video {
+
+        width: 1150px
+    }
+
+    .video__header {
+
+        float: right;
+
+        margin: 0;
+
+        padding: 0;
+
+        width: 150px;
+
+        padding-top: 100px;
+
+        padding-right: 140px;
+
+        padding-left: 76px;
+
+        margin-right: 50px;
+
+        border: none;
+
+        border-top: 1px solid #ececec;
+
+        border-right: 1px solid #ececec
+    }
+
+    .video__header-svg {
+
+        left: 805px;
+
+        top: 50px
+    }
+
+    .video__video {
+
+        width: 682px;
+
+        height: 455px;
+
+        float: none;
+
+        margin-top: 0;
+
+        margin-bottom: 100px
+    }
+
+    .video__options {
+
+        float: right;
+
+        width: 367px;
+
+        padding: 0;
+
+        margin-top: -410px;
+
+        margin-right: 50px;
+
+        padding-top: 40px;
+
+        border-left: none
+    }
+
+    .video__description {
+
+        width: 220px;
+
+        padding-left: 78px;
+
+        padding-bottom: 50px
+    }
+
+    .video__btn {
+
+        margin-left: 80px;
+
+        margin-right: 57px;
+
+        margin-bottom: 35px
+    }
+
+    .banner-form {
+
+        width: 1150px
+    }
+
+    .banner-form__header {
+
+        padding-bottom: 100px;
+
+        font-size: 53px;
+
+        font-weight: 700;
+
+        line-height: 57px
+    }
+
+    .form {
+
+        width: 1150px
+    }
+
+    .form__description {
+
+        padding-left: 225px;
+
+        padding-top: 110px
+    }
+
+    .form__group-title {
+
+        margin-left: 115px
+    }
+
+    .form__text-label {}
+
+    .form__text-input {
+
+        width: 575px
+    }
+
+    .form__text-input--name {
+
+        width: 620px
+    }
+
+    .form__container--other .form__group-title {
+
+        padding-right: 0
+    }
+
+    .form__container--other .form__text-input {
+
+        width: 690px;
+
+        margin-left: 0
+    }
+
+    .form__comment {
+
+        width: 690px;
+
+        margin-left: 0
+    }
+
+    .form__container--comment .form__group-title {
+
+        padding-right: 0
+    }
+
+    .form__footer-container {
+
+        padding-bottom: 95px
+    }
+
+    .form__other-info {
+
+        padding-right: 240px
+    }
+
+    .form__submit {
+
+        margin-left: 220px
+    }
+
+    .modal {
+
+        width: 1150px
+    }
+
+    .modal {}
+
+    .modal__container {}
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+    .banner {
+
+        background-image: url("../img/hero-mobile@2x.jpg")
+    }
+}
